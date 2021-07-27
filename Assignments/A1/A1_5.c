@@ -7,7 +7,7 @@
 int main (void){
 
     int dec, rem;
-    unsigned long bin = 0, p = 1;
+    long long unsigned int bin = 0, p = 1;
     printf("Enter a decimal number in range 0 - 1048575: ");
     scanf("%d", &dec);
 

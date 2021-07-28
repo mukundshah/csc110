@@ -54,3 +54,22 @@ void printProductOfTwoMatrices(int x[S][S], int y[S][S]){
         printf("\n");
     }
 }
+
+/*
+Enter matrix A:
+1 2 3
+4 5 6
+7 8 9
+Enter matrix B:
+1 2 3
+4 5 6
+7 8 9
+The sum of the matrices is:
+2 4 6
+8 10 12
+14 16 18
+The sum of the matrices is:
+30 36 42
+66 81 96 
+102 126 150
+*/

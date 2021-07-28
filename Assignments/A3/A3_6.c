@@ -1,3 +1,7 @@
+/*
+Write a C program that prints elements of array using recursive function
+*/
+
 #include <stdio.h>
 
 void printArray(int array[], int size, int index);
@@ -21,3 +25,10 @@ void printArray(int array[], int size, int index){
     printf("%d, ",array[index]);
     printArray(array, size, index + 1);
 }
+
+/*
+Enter the size of array: 10
+Enter the elements of array: 5 7 8 99 55 44 75 88 5 0
+The elements of the array are:
+5, 7, 8, 99, 55, 44, 75, 88, 5, 0,
+*/

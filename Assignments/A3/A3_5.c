@@ -42,3 +42,11 @@ void findAndPrintRoots(int a, int b, int c){
         printf("The root is: %0.2f",((-1.0 * (float)b) / (2 * a)));
     }
 }
+
+/*
+Enter the coefficients of quadratic equation.
+a = 5  
+b = 5 
+c = 16
+The roots are:   -0.50 + 1.72i  and      -0.50 - 1.72i
+*/

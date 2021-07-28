@@ -35,3 +35,8 @@ binary decitobin(int dec){
         return bin;
     return bin;
 }
+
+/*
+Enter a decimal number in range 0 - 1048575: 1048058
+11111111110111111010 is the binary equivalent of entered number.
+*/

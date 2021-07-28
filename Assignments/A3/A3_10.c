@@ -24,3 +24,10 @@ void maxAndMinSize(int a, int b){
     int min = abs(b - a)+1;
     printf("For the third side, maximum size = %d and minimum size = %d.", max, min);
 }
+
+/*
+Enter the two sides of the triangle.
+Side 1 = 58
+Side 2 = 4
+For the third side, maximum size = 61 and minimum size = 55.
+*/

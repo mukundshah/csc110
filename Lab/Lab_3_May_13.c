@@ -1,7 +1,7 @@
 /*
+Date: May 13, 2021
 Lab 2: Write a C program that reads a two digit number and finds its sum of digits.
 For example, if number is 76 then its digit sum is 13.
-Date: May 13, 2021
 */
 
 #include <stdio.h>

@@ -1,6 +1,6 @@
 /*
-Lab 1: Write a program that reads a number and tests whether it is multiple of 7 or not.
 Date: May 13, 2021
+Lab 1: Write a program that reads a number and tests whether it is multiple of 7 or not.
 */
 
 #include <stdio.h>

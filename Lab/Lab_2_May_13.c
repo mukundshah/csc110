@@ -1,7 +1,7 @@
 /*
+Date: May 13, 2021
 Lab 2: Write a C program that reads marks in five subjects of a student and then tests 
        whether student ids fail or pass.
-Date: May 13, 2021
 */
 
 #include <stdio.h>

@@ -17,7 +17,7 @@ int main(){
 }
 
 int tossCoin(){
-    return ((rand() %2) ? 1 : 0);
+    return (rand()%2);
 }
 
 /*

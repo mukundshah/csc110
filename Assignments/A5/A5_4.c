@@ -1,10 +1,11 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
-    FILE *fnum = fopen("files\\NUMBER.txt", "w+b");
-    FILE *feven = fopen("files\\EVEN.txt", "w+b");
-    FILE *fodd = fopen("files\\ODD.txt", "w+b");
+    FILE *fnum = fopen("files\\NUMBER.txt", "w+");
+    FILE *feven = fopen("files\\EVEN.txt", "w+");
+    FILE *fodd = fopen("files\\ODD.txt", "w+");
     int N;
 
     if(fnum==NULL){
@@ -16,38 +17,50 @@ int main()
     printf("\nHow many numbers do you want to write in the file? : ");
     scanf("%d", &N);
 
-    int nums;
+    int num;
     printf("Enter the numbers: ");
     for (int i = 0; i < N; i++){
-        scanf("%d", &nums);
-        fseek(fnum, 0, SEEK_END);
-        fwrite(&nums, sizeof(int), 1, fnum);
+        scanf("%d", &num);
+        fprintf(fnum, "%d\n", num);
     }
+    printf("Numbers successfully written to NUMBER.txt.");
     rewind(fnum);
-    for (int i = 0;  fread(&nums, sizeof(int), 1, fnum) == 1; i++){   
-        if((nums%2)==0){
-                fseek(feven, 0, SEEK_END);
-                fwrite(&nums, sizeof(int), 1, feven);
-            }
-        else{
-                fseek(fodd, 0, SEEK_END);
-                fwrite(&nums, sizeof(int), 1, fodd);
-        }
+    while(fscanf(fnum, "%d", &num) != EOF){
+    
+        if((num%2)==0)
+            fprintf(feven, "%d\n", num);
+        else
+            fprintf(fodd, "%d\n", num);
+        
     }
 
     rewind(feven);
     rewind(fodd);
 
-    while(fread(&nums, sizeof(int), 1, fodd)==1)
-        printf("%d, ", nums);
-
+    printf("\n\nEven numbers: ");
+    while(fscanf(feven, "%d", &num) != EOF)
+        printf("%d, ", num);
+    printf("\nEven numbers successfully written to EVEN.txt.");
     printf("\n");
-
-    while(fread(&nums, sizeof(int), 1, feven) == 1)
-        printf("%d, ", nums);
-
+    printf("\nOdd numbers: ");
+    while(fscanf(fodd, "%d", &num) != EOF)
+        printf("%d, ", num);
+    printf("\nOdd numbers successfully written to ODD.txt.");
     fclose(fnum);
     fclose(fodd);
     fclose(feven);
     return 0;
 }
+
+/*
+File opened successfully.
+How many numbers do you want to write in the file? : 6
+Enter the numbers: 1 2 3 4 5 6
+Numbers successfully written to NUMBER.txt.
+
+Even numbers: 2, 4, 6,
+Even numbers successfully written to EVEN.txt.
+
+Odd numbers: 1, 3, 5,
+Odd numbers successfully written to ODD.txt.
+*/

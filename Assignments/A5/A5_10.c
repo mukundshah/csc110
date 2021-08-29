@@ -8,7 +8,7 @@ __uint128_t perfectnum(__uint128_t i);
 __uint128_t main()
 {
     int i, j;
-    printf("Due to __uint128_ternal  limitation, first 4 perfect numbers are only available.\n");
+    printf("Due to internal  limitation, first 8 perfect numbers are only available.\n");
     printf("Enter rank for first perfect number (i): ");
     scanf("%d", &i);
     printf("Enter rank for second perfect number (j): ");
@@ -38,19 +38,6 @@ __uint128_t perfectnum(__uint128_t n){
             }
         }
         num += 1;
-        // __uint128_t sum = 0;
-        // if(num%10==6 ||num%10==8){
-        //     for (__uint128_t i = 1; i < num; i++)
-        //     {
-        //         if (num % i == 0)
-        //             sum += i;
-        //     }
-        //     if (sum == num){
-        //         count++;
-        //         result = num;
-        //     }
-        // }
-        // num += 2;
     }
     return result;
 }

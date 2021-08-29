@@ -1,3 +1,8 @@
+/*
+Explain the use of graphical functions. Write a program to draw a triangle using line() 
+graphics function.
+*/
+
 #include <stdio.h>
 #include <conio.h>
 #include <graphics.h>

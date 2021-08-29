@@ -1,3 +1,7 @@
+/*
+Discuss with example any five graphics function used in c-programming.
+*/
+
 #include <conio.h>
 #include <graphics.h>
 

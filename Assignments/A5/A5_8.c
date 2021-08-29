@@ -1,3 +1,8 @@
+/*
+Write a program that will concatenate two files, that is, append the contents of one file 
+at the end of another file and write the result in a third file
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 

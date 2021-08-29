@@ -1,3 +1,9 @@
+/*
+Write a C program to read name, address, post, salary of n employees and store them in 
+a file named “employee.txt”. Read the records from the file and display then in the order 
+of increasing salary.
+*/
+
 #include <stdio.h>
 #include <string.h>
 

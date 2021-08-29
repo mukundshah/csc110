@@ -1,3 +1,9 @@
+/*
+4. Explain various modes in which file can be opened? Write a program to CREATE and 
+WRITE N numbers in a file "NUMBER.TXT" . Open this file then read its content and put 
+all even numbers in one file "EVEN.TXT" and odd numbers in another file"ODD.TXT".
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 

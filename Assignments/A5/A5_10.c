@@ -1,3 +1,15 @@
+/*
+A perfect number is one that is the sum of its factors, excluding itself. The 1st perfect 
+number is 6 because 6 = 1 + 2 + 3. The 2nd perfect number is 28 which equals 1 + 2 + 4 + 
+7 + 14. The third is 496 = 1 + 2 + 4 + 8 + 16 + 31 + 62 + 124 + 248. In each case, the 
+number is the sum of all its factors excluding itself. 
+Write a method named sum_of_perfectnum () that takes two integer arguments, i and j 
+and returns the sum of the ith and jth perfect numbers. So for example, henry (1, 3) should 
+return 502 because 6 is the 1st perfect number and 496 is the 3rd perfect number and 6 + 
+496 = 502.
+The function signature is sum_of_perfectnum (int i, int j
+*/
+
 #include <stdio.h>
 #include <math.h>
 

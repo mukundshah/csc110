@@ -108,9 +108,9 @@ void addRecord(){
     printf("Roll no. of student (unique) : ");
     scanf("%d", &student.roll);
     printf("Name of student              : ");
-    scanf("%s", &student.name);
+    scanf("%s", student.name);
     printf("Address of student           : ");
-    scanf("%s", &student.address);
+    scanf("%s", student.address);
     printf("Total marks of student       : ");
     scanf("%d", &student.total_marks);
 
@@ -135,9 +135,9 @@ void editRecord(){
             printf("\n*********************************************");
             printf("\n*************** Enter new data **************");
             printf("Name of student              : ");
-            scanf("%s", &student.name);
+            scanf("%s", student.name);
             printf("Address of student           : ");
-            scanf("%s", &student.address);
+            scanf("%s", student.address);
             printf("Total marks of student       : ");
             scanf("%d", &student.total_marks);
             fseek(fptr, sizeof(student) * recordNo, SEEK_SET);

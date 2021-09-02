@@ -30,7 +30,7 @@ int main()
 
 int isCentered15(int arr[], int length){
     if (length == 0) return 0;
-    if (length == 3 && arr[1] == 15 ) return 0;
+    if (length == 3 && arr[1] == 15 ) return 1;
 
     int x = 1;
     while (x != (length-2)){
